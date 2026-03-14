@@ -27,7 +27,12 @@
 3. Создайте в jenkins Freestyle Project, подключите получившийся репозиторий к нему и произведите запуск тестов и сборку проекта ```go test .``` и  ```docker build .```.
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
-[скриншот 1 к заданию 1]()
+
+[скриншот 1 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/1.png)
+[скриншот 2 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/2.png)
+[скриншот 3 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/3.png)
+[скриншот 4 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/4.png)
+
 ---
 
 ### Задание 2
