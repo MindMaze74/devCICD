@@ -51,6 +51,39 @@
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
+Скриншот-5 к заданию 5:
+![скриншот 5](https://github.com/MindMaze74/devCICD/blob/main/img/5.png)
+
+```
+pipeline {
+    agent any
+    stages {
+        stage('Git') {
+            steps {
+                git branch: 'main', 
+                    url: 'https://github.com/MindMaze74/sdvps-materials.git'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'ls -la' // покажет содержимое корня
+                sh '/usr/local/go/bin/go test .'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'docker build . -t ubuntu-bionic:8082/hello-world:v$BUILD_NUMBER'
+            }
+        }
+    }
+}
+```
+
+Скриншот-6 к заданию 5:
+![скриншот 6](https://github.com/MindMaze74/devCICD/blob/main/img/6.png)
+
+Скриншот-7 к заданию 5:
+![скриншот 7](https://github.com/MindMaze74/devCICD/blob/main/img/7.png)
 ---
 
 ### Задание 3
