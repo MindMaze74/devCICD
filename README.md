@@ -103,9 +103,6 @@ pipeline {
 Скриншот-9 к заданию 5:
 ![скриншот 9](https://github.com/MindMaze74/devCICD/blob/main/img/9.png)
 
-Скриншот-9 к заданию 5:
-![скриншот 9](https://github.com/MindMaze74/devCICD/blob/main/img/9.png)
-
 Скриншот-10 к заданию 5:
 ![скриншот 10](https://github.com/MindMaze74/devCICD/blob/main/img/10.png)
 
