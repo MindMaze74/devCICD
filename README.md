@@ -97,6 +97,65 @@ pipeline {
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
+Скриншот-8 к заданию 5:
+![скриншот 8](https://github.com/MindMaze74/devCICD/blob/main/img/8.png)
+
+Скриншот-9 к заданию 5:
+![скриншот 9](https://github.com/MindMaze74/devCICD/blob/main/img/9.png)
+
+Скриншот-9 к заданию 5:
+![скриншот 9](https://github.com/MindMaze74/devCICD/blob/main/img/9.png)
+
+Скриншот-10 к заданию 5:
+![скриншот 10](https://github.com/MindMaze74/devCICD/blob/main/img/10.png)
+
+Скриншот-11 к заданию 5:
+![скриншот 11](https://github.com/MindMaze74/devCICD/blob/main/img/11.png)
+
+Скриншот-12 к заданию 5:
+![скриншот 12](https://github.com/MindMaze74/devCICD/blob/main/img/12.png)
+
+Скриншот-13 к заданию 5:
+![скриншот 13](https://github.com/MindMaze74/devCICD/blob/main/img/13.png)
+
+```
+pipeline {
+    agent any
+    
+    environment {
+        PATH = "/usr/local/go/bin:${env.PATH}"
+    }
+    
+    stages {
+        stage('Git') {
+            steps {
+                git branch: 'main', 
+                    url: 'https://github.com/MindMaze74/sdvps-materials.git'
+            }
+        }
+        
+        stage('Build Binary') {
+            steps {
+                sh '''
+                    
+                    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix nocgo -o app .
+                '''
+            }
+        }
+        
+        stage('Upload to Nexus') {
+            steps {
+                sh '''
+                    
+                    curl -v --user admin:qwe1234 \
+                        --upload-file app \
+                       http://192.168.123.10:8081/repository/zadanie3/app-v${BUILD_NUMBER}
+                '''
+            }
+        }
+    }
+}
+```
 ---
 ## Дополнительные задания* (со звёздочкой)
 
