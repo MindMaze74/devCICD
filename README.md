@@ -28,10 +28,10 @@
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
-[скриншот 1 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/1.png)
-[скриншот 2 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/2.png)
-[скриншот 3 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/3.png)
-[скриншот 4 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/4.png)
+![скриншот 1 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/1.png)
+![скриншот 2 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/2.png)
+![скриншот 3 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/3.png)
+![скриншот 4 к заданию 1](https://github.com/MindMaze74/devCICD/blob/main/img/4.png)
 
 ---
 
